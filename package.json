@@ -63,6 +63,7 @@
     "eslint-plugin-react": "^7.29.4",
     "fs-extra": "^10.0.1",
     "gatsby-post-gen": "^1.0.0",
+    "gh-pages": "^3.2.3",
     "gray-matter": "^4.0.3",
     "inquirer": "^8.2.2",
     "prettier": "^2.6.0",
@@ -89,6 +90,6 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "deploy": "gatsby build && main -d public -b gh-pages"
+    "deploy": "gatsby build && gh-pages -d public"
   }
 }
