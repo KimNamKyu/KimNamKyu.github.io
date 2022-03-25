@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/development/third/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"test","author":"[Your Name]","siteUrl":"https://kimnamkyu.github.io/southkyu.io","comment":{"disqusShortName":"","utterances":"KimNamKyu/southkyu.io"},"sponsor":{"buyMeACoffeeId":"jbee"}}},"markdownRemark":{"id":"51ebf763-3391-55d6-b09d-9426bd0f20a2","excerpt":"Third Post","html":"<p>Third Post</p>","frontmatter":{"title":"Third Post","date":"February 01, 2019"}}},"pageContext":{"slug":"/development/third/","previous":null,"next":{"fields":{"slug":"/development/second/"},"frontmatter":{"title":"Second Post"}}}},
-    "staticQueryHashes": ["2486386679","3128451518"]}

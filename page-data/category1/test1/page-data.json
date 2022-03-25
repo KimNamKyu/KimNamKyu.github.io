@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/category1/test1/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"test","author":"[Your Name]","siteUrl":"https://kimnamkyu.github.io/southkyu.io","comment":{"disqusShortName":"","utterances":"KimNamKyu/southkyu.io"},"sponsor":{"buyMeACoffeeId":"jbee"}}},"markdownRemark":{"id":"aab4b3b5-2488-5298-adf8-6ccc78ba9ff9","excerpt":"Test1","html":"<p>Test1</p>","frontmatter":{"title":"Category Test1","date":"July 02, 2020"}}},"pageContext":{"slug":"/category1/test1/","previous":{"fields":{"slug":"/category2/test2/"},"frontmatter":{"title":"Category Test2"}},"next":{"fields":{"slug":"/development/hello/"},"frontmatter":{"title":"Welcome Bee starter"}}}},
-    "staticQueryHashes": ["2486386679","3128451518"]}
