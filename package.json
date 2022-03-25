@@ -39,7 +39,7 @@
     "intersection-observer": "^0.12.0",
     "katex": "^0.13.3",
     "lodash": "^4.17.21",
-    "node-sass": "^7.0.1",
+    "node-sass": "^6.0.0",
     "prismjs": "^1.27.0",
     "query-string": "^7.1.1",
     "react": "^16.8.1",
@@ -71,7 +71,7 @@
     "sass": "^1.49.9",
     "signale": "^1.4.0"
   },
-  "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
+  "homepage": "https://kimnamkyu.github.io/southkyu.io",
   "keywords": [
     "gatsby"
   ],
