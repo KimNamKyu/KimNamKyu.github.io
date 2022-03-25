@@ -25,8 +25,11 @@ jobs:
           rm -rf ./public
           mkdir public
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: 'gh-pages'
+          clean: false
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
