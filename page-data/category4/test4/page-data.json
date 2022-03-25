@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/category4/test4/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"test","author":"[Your Name]","siteUrl":"https://kimnamkyu.github.io/southkyu.io","comment":{"disqusShortName":"","utterances":"KimNamKyu/southkyu.io"},"sponsor":{"buyMeACoffeeId":"jbee"}}},"markdownRemark":{"id":"bf56e8be-6cf9-53de-9642-9c6d1b932e9c","excerpt":"Test1","html":"<p>Test1</p>","frontmatter":{"title":"Category Test4","date":"July 02, 2020"}}},"pageContext":{"slug":"/category4/test4/","previous":{"fields":{"slug":"/essay/test9/"},"frontmatter":{"title":"Test9"}},"next":{"fields":{"slug":"/category3/test3/"},"frontmatter":{"title":"Category Test3"}}}},
+    "staticQueryHashes": ["2486386679","3128451518"]}
