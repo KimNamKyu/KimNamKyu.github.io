@@ -209,9 +209,31 @@ autorun(() => {
 <span class="token keyword">export</span> <span class="token keyword">default</span> App</code></pre></div>
 <p>mobx-react에서 제공하는 provider를사용한 방법해보자!</p>
 <h2 id="computed-by-mobx" style="position:relative;"><a href="#computed-by-mobx" aria-label="computed by mobx permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>computed (by mobx)</h2>
-<img src="../../../static/computed.png">
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCUlEQVQY00WPy06DUBCGef/ElW9hvGy66UoXRttFTVOjBtlULgVKFbBwDpzbZ6AXJ/kyyT8z/8x4ANY5etmglcIYi1JqkKkbSdlIcO6sKdVRNzu6XmKMQRuN6jrqPKfKM7yi2PH9tSJcTtn6j6TRmiSOCOKCy+kbF5MlMz8hTWLSLMOP5zy8XPERPpNlGZ9BwNfritndLU8313hd37MvQrbBnN/Ux+h+vKTcC+7fN0wWazZlO2paa3Z1TBAv2JbRqLnhOyEok5ifKMTjGFVVobTBWDsO4uw/1oyDA9Y4jLaHbMzxbUMr5ejjDU3gRhPRtgghRtoTrUBKSRRF5HlO18lzz4mhbs1h6R8yDHwSr+X3RwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="computed"
+        title="computed"
+        src="/static/5fd6d7b0d0a3dda2b72ff52f5843e853/c1b63/computed.png"
+        srcset="/static/5fd6d7b0d0a3dda2b72ff52f5843e853/5a46d/computed.png 300w,
+/static/5fd6d7b0d0a3dda2b72ff52f5843e853/0a47e/computed.png 600w,
+/static/5fd6d7b0d0a3dda2b72ff52f5843e853/c1b63/computed.png 1200w,
+/static/5fd6d7b0d0a3dda2b72ff52f5843e853/f868f/computed.png 1382w"
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span>
 먼가 변경이 일어났을때 observable state를 바로 render해서 사용하는 것이아니고
-computed라고 하는 렌더에 변경을 일으키는 항목으로 notify 시키고 컴포넌트에서는 computed의 상태만 변경되었을때 렌더를 다시하는 방향으로 observable의 모든 state변경에 반응하지 않고 computed상태를 중간단계를 두어 처리하는 일종의 캐싱형태의 단계이다.
+computed라고 하는 렌더에 변경을 일으키는 항목으로 notify 시키고 컴포넌트에서는 computed의 상태만 변경되었을때 렌더를 다시하는 방향으로 observable의 모든 state변경에 반응하지 않고 computed상태를 중간단계를 두어 처리하는 일종의 캐싱형태의 단계이다.</p>
 <blockquote>
 <ul>
 <li>computed(내부에서 observable을 사용하는 함수);
