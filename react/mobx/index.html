@@ -209,7 +209,7 @@ autorun(() => {
 <span class="token keyword">export</span> <span class="token keyword">default</span> App</code></pre></div>
 <p>mobx-react에서 제공하는 provider를사용한 방법해보자!</p>
 <h2 id="computed-by-mobx" style="position:relative;"><a href="#computed-by-mobx" aria-label="computed by mobx permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>computed (by mobx)</h2>
-<img src="../assets/../../../assets/computed.png">
+<img src="../../../static/computed.png">
 먼가 변경이 일어났을때 observable state를 바로 render해서 사용하는 것이아니고
 computed라고 하는 렌더에 변경을 일으키는 항목으로 notify 시키고 컴포넌트에서는 computed의 상태만 변경되었을때 렌더를 다시하는 방향으로 observable의 모든 state변경에 반응하지 않고 computed상태를 중간단계를 두어 처리하는 일종의 캐싱형태의 단계이다.
 <blockquote>
