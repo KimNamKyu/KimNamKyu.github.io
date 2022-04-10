@@ -1,38 +1,38 @@
-name: devlog deploy
+# name: devlog deploy
 
-on:
-  push:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-    steps:
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+#     strategy:
+#       matrix:
+#         node-version: [14.x]
+#     steps:
+#       - name: Checkout gh-pages branch
+#         uses: actions/checkout@v2
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+#       - name: Run a one-line script
+#         run: echo Hello, world!
 
-      - name: npm install
-        run: npm install
+#       - name: npm install
+#         run: npm install
 
-      - name: gatsby build
-        env:
-          GH_API_KEY: ${{ secrets.GITHUB }}
-        run: npm run build
+#       - name: gatsby build
+#         env:
+#           GH_API_KEY: ${{ secrets.GITHUB }}
+#         run: npm run build
 
-      - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.GITHUB }}
-          BUILD_DIR: 'public/'
+#       - name: deploy
+#         uses: maxheld83/ghpages@v0.2.1
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           GH_PAT: ${{ secrets.GITHUB }}
+#           BUILD_DIR: 'public/'
